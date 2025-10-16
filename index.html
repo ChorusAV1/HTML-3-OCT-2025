@@ -3,6 +3,7 @@
 
 <head>
     <title>Portafolio Profesional - Luis Daniel Sánchez López</title>
+    <link rel="stylesheet" href="css/main.css"/> <!-- Enlaca el css con el HTML-->
 </head>
 
 <body>
@@ -15,30 +16,97 @@
 
     <!-- Menú de navegación -->
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mí</a>
-        <a href="#">Mi Experiencia</a>
+        <a href="#bienvenida">Sobre mí</a>
+        <a href="#proyectos">Proyectos Tecnologicos</a>
+        <a href="#competencias">Competencias profesionales</a>
         <a href="#">Contáctame</a>
     </nav>
 
     <!-- Contenido principal -->
     <main>
-        <section>
+        <section id="bienvenida">
             <h2>Bienvenidos a mi portafolio profesional</h2>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                Mi nombre es <mark>Luis Daniel Sánchez López</mark> soy especialista en <strong>Tecnologías de la Información</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
                 into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
                 release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
+                <p>Mi <small>Frase favorita es:</small> <i>Primero resuelvo el problema...</i></p>software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
             <img alt="Foto de perfil" src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg" width="200"/>
-            <footer>
-                <p>&copy; 2025 Todos los derechos reservados</p>
-            </footer>
+        </section>
+        
+        <section id="proyectos">
+            <h2>Proyectos Tecnológicos</h2>
+            <div class="lista-proyectos">
+                <article class="proyecto">
+                    <h3>Agenda</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit accusantium cumque, minima facere numquam perspiciatis!</p>
+                </article>
+                <article  class="proyecto">
+                    <h3>Sistema de ventas</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit accusantium cumque, minima facere numquam perspiciatis!</p>
+                </article>
+                <article  class="proyecto">
+                    <h3>Safemap</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit accusantium cumque, minima facere numquam perspiciatis!</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="competencias">
+            <h2>Competencias profesionales</h2>
+            <h3>Tecnologías y Lenguajes</h3>
+            <!-- Listas desordenadas (Viñetas)-->
+            <ul>
+                <li>HTML 5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+            </ul>
+            <h3>Dominio de habilidades</h3>
+            <div>
+                <label>HTML</label>
+                <progress min="0" max="100" value="75">75%</progress>
+            </div>
+            <div>
+                <label>CSS</label>
+                <progress min="0" max="100" value="30">50%</progress>
+            </div>
+            <div>
+                <label>JavaScript</label>
+                <progress min="0" max="100" value="70">70%</progress>
+            </div>
+            <div>
+                <label>C#</label>
+                <progress min="0" max="100" value="80">80%</progress>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctame</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatibus placeat voluptates rem voluptatem maiores pariatur ipsum amet perferendis illum.</p>
+            <form>
+                <div class="campos">
+                    <label>Nombre Completo</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre"/>
+                </div>
+                <div class="campos">
+                    <label>Telefono</label>
+                    <input type="text" name="telefono" placeholder="Numero de telefono"/>
+                </div>
+                <div class="campos">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+            
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
 </body>
 
 </html>

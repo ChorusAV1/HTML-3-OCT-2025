@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    margin: auto;
+}
+
+h1,h2
+{
+    font-family: "Open Sans", sans-serif;
+}
+
+body
+{
+    font-family: "Roboto", sans-serif;
+}
+
+header
+{
+    background-color: aqua;
+    text-align: center;
+    color: darkblue;
+    border-bottom: solid 5px #000000; /* Este es un comentario */
+    padding: 30px 0;
+}
+
+nav
+{
+    background-color: red;
+    padding: 30px 20px;
+    border-bottom: 5px solid coral;
+    font-size: 15px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    /* text-transform: uppercase; */
+}
+
+nav a:hover
+{
+    background-color: purple;
+    border-radius: 6px;
+}
+
+#bienvenida
+{
+    padding: 30px;
+    text-align: center;
+}
+
+#proyectos
+{
+    background-color: aquamarine;
+    padding: 30px;
+}
+
+.lista-proyectos
+{
+    display: flex;
+    padding-top: 20px;
+}
+
+.proyecto
+{
+    width: 30%;
+    border: solid 2px #581548;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.proyecto h3
+{
+    color: #af5308;
+}
+
+#competencias
+{
+    padding: 30px 20px;
+}
+
+#competencias h2
+{
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#competencias ul
+{
+    list-style-type: none;
+    display: flex;
+    clear: both;
+}
+
+#competencias ul li
+{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#contacto
+{
+    padding: 30px;
+    border-top: 2px dashed skyblue;
+}
+
+.campos
+{
+    padding: 10px;
+    clear: both;
+    font-size: 16px;
+}
+
+.campos label
+{
+    font-size: 20px;
+}
+
+.campos input
+{
+    font-size: 20px;
+    padding: 15px;
+    border: solid 2px darkorange;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.campos button
+{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #af5308;
+    color: white;
+    width: 20%;
+    border: none;
+    font-size: 20px;
+}
+
+footer
+{
+    padding: 30px;
+    background-color: orange;
+    color: aliceblue;
+    font-size: 14px;
+    border-top: solid 5px rosybrown;
+    text-align: center;
+}
