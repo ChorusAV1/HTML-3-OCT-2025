@@ -3,108 +3,120 @@
 
 <head>
     <title>Portafolio Profesional - Luis Daniel Sánchez López</title>
-    <link rel="stylesheet" href="css/main.css"/> <!-- Enlaca el css con el HTML-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="text-center">
 
     <!-- Todo lo que coloquen lo verá el usuario -->
-    <header>
+    <header class="p-[30px] text-xl">
         <h1>Portafolio Profesional</h1>
         <h4>Luis Daniel Sánchez López</h4>
     </header>
 
     <!-- Menú de navegación -->
-    <nav>
-        <a href="#bienvenida">Sobre mí</a>
-        <a href="#proyectos">Proyectos Tecnologicos</a>
-        <a href="#competencias">Competencias profesionales</a>
-        <a href="#">Contáctame</a>
+    <nav class="py-[10px] text-lg bg-blue-400 px-[20px] mb-[30px]">
+        <a class="hover:bg-white p-1 rounded transition duration-200 ease-in-out active:bg-gray-400" href="#bienvenida">Sobre mí</a>
+        <a class="hover:bg-white p-1 rounded transition duration-200 ease-in-out active:bg-gray-400" href="#proyectos">Proyectos Tecnologicos</a>
+        <a class="hover:bg-white p-1 rounded transition duration-200 ease-in-out active:bg-gray-400" href="#competencias">Competencias profesionales</a>
+        <a class="hover:bg-white p-1 rounded transition duration-200 ease-in-out active:bg-gray-400" href="#">Contáctame</a>
     </nav>
 
     <!-- Contenido principal -->
     <main>
         <section id="bienvenida">
-            <h2>Bienvenidos a mi portafolio profesional</h2>
-            <p>
-                Mi nombre es <mark>Luis Daniel Sánchez López</mark> soy especialista en <strong>Tecnologías de la Información</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                <p>Mi <small>Frase favorita es:</small> <i>Primero resuelvo el problema...</i></p>software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <img alt="Foto de perfil" src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg" width="200"/>
+
+            <h2 class="text-3xl p-[30px]">Bienvenidos a mi portafolio profesional</h2>
+            
+            <div class="flex justify-between p-[30px]">
+                <p class="text-left">
+                    Mi nombre es <mark>Luis Daniel Sánchez López</mark> soy especialista en <strong>Tecnologías de la Información</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                </p>
+
+                <img class="mx-auto drop-shadow-2xl rounded-2xl" alt="Foto de perfil" src="pfp.jpg" width="200"/>
+            </div>
+            
+            <p class="p-[100px] text-4xl">Mi <small>frase favorita es:</small><br><br> <i>Primero resuelve el problema. Luego, escribe el código.</i></p>
+            
         </section>
         
         <section id="proyectos">
-            <h2>Proyectos Tecnológicos</h2>
-            <div class="lista-proyectos">
-                <article class="proyecto">
-                    <h3>Agenda</h3>
+            <h2 class="bg-slate-400 p-10 text-3xl font-bold">Proyectos Tecnológicos</h2>
+            <div class="lista-proyectos flex justify-between p-3 bg-slate-400">
+                <article class="proyecto text-left rounded-2xl p-3 bg-slate-100 drop-shadow-2xl">
+                    <h3 class="font-bold">Agenda</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit accusantium cumque, minima facere numquam perspiciatis!</p>
                 </article>
-                <article  class="proyecto">
-                    <h3>Sistema de ventas</h3>
+                <article  class="proyecto text-left rounded-2xl p-3 bg-slate-100 mx-3">
+                    <h3 class="font-bold">Sistema de ventas</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit accusantium cumque, minima facere numquam perspiciatis!</p>
                 </article>
-                <article  class="proyecto">
-                    <h3>Safemap</h3>
+                <article  class="proyecto text-left rounded-2xl p-3 bg-slate-100">
+                    <h3 class="font-bold">Safemap</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit accusantium cumque, minima facere numquam perspiciatis!</p>
                 </article>
             </div>
         </section>
 
         <section id="competencias">
-            <h2>Competencias profesionales</h2>
-            <h3>Tecnologías y Lenguajes</h3>
+            <h2 class="p-10 text-3xl font-bold">Competencias profesionales</h2>
+            <h3 class="p-10 text-3xl">Tecnologías y Lenguajes</h3>
             <!-- Listas desordenadas (Viñetas)-->
-            <ul>
-                <li>HTML 5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>C#</li>
+            <ul class="flex justify-center text-white text-3xl p-10">
+                <li class="bg-orange-600 p-4 mx-10 rounded-full">HTML 5</li>
+                <li class="bg-blue-600 p-4 mx-10 rounded-full">CSS</li>
+                <li class="bg-yellow-500 p-4 mx-10 rounded-full">JavaScript</li>
+                <li class="bg-purple-500 p-4 mx-10 rounded-full">C#</li>
             </ul>
-            <h3>Dominio de habilidades</h3>
-            <div>
-                <label>HTML</label>
-                <progress min="0" max="100" value="75">75%</progress>
+            <h3 class="p-10 text-3xl">Dominio de habilidades</h3>
+            <div class="flex flex-col items-center w-screen">
+                <div class="p-3 text-2xl w-100 rounded-full m-1 bg-gray-200">
+                    <label>HTML</label>
+                    <progress min="0" max="100" value="75">75%</progress>
+                </div>
+                <div class="p-3 text-2xl w-100 rounded-full m-1 bg-gray-200">
+                    <label>CSS</label>
+                    <progress min="0" max="100" value="30">50%</progress>
+                </div>
+                <div class="p-3 text-2xl w-100 rounded-full m-1 bg-gray-200">
+                    <label>JavaScript</label>
+                    <progress min="0" max="100" value="70">70%</progress>
+                </div>
+                <div class="p-3 text-2xl w-100 rounded-full mt-1 mb-20 bg-gray-200">
+                    <label>C#</label>
+                    <progress min="0" max="100" value="80">80%</progress>
+                </div>
             </div>
-            <div>
-                <label>CSS</label>
-                <progress min="0" max="100" value="30">50%</progress>
-            </div>
-            <div>
-                <label>JavaScript</label>
-                <progress min="0" max="100" value="70">70%</progress>
-            </div>
-            <div>
-                <label>C#</label>
-                <progress min="0" max="100" value="80">80%</progress>
-            </div>
+
+            
+            
         </section>
 
-        <section id="contacto">
-            <h2>Contáctame</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatibus placeat voluptates rem voluptatem maiores pariatur ipsum amet perferendis illum.</p>
+        <section id="contacto" class="p-3 text-left bg-blue-400">
+            <h2 class="font-bold text-3xl">Contáctame</h2>
+            <p class="text-white text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatibus placeat voluptates rem voluptatem maiores pariatur ipsum amet perferendis illum.</p>
             <form>
-                <div class="campos">
-                    <label>Nombre Completo</label>
-                    <input type="text" name="nombre" placeholder="Tu nombre"/>
+                <div class="campos p-1 text-lg">
+                    <label class="text-white">Nombre Completo</label>
+                    <input class="bg-white rounded-md p-1" type="text" name="nombre" placeholder="Tu nombre"/>
+                </div>
+                <div class="campos p-1 text-lg">
+                    <label class="text-white">Telefono</label>
+                    <input class="bg-white rounded-md p-1" type="text" name="telefono" placeholder="Numero de telefono"/>
                 </div>
                 <div class="campos">
-                    <label>Telefono</label>
-                    <input type="text" name="telefono" placeholder="Numero de telefono"/>
-                </div>
-                <div class="campos">
-                    <button type="submit">Enviar</button>
+                    <button class="bg-blue-900 text-white p-4 text-xl rounded-xl" type="submit">Enviar</button>
                 </div>
             </form>
             
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-blue-400 text-white">
         <p>&copy; 2025 Todos los derechos reservados</p>
     </footer>
 </body>
